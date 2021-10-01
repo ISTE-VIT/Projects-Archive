@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<title>Tic Tac Toe - Sahil Kaling</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Tic-Tac-Toe</h1>
+		<span style="float: left;"><h2>Current Turn <br><span id="turn"></span></h2></span>
+		<span style="float: right;">
+			<div id="scoreboard">
+				<h2>Head to Head</h2>
+				<table class = "table">
+				<tr style="font-size:x-large; font-family:'Times New Roman', Times, serif;">
+					<th ><b>X</b></th>
+					<th ><b>O</b></th>
+				</tr>
+				<tr>
+					<td>&nbsp;<span id="scorex"></span></td>
+					<td>&nbsp;<span id="scoreo"></span></td>
+				</tr>
+			</table>
+			<button type="button" class="btn btn-dark scoreboard" onclick="resetScore()">Reset</button>
+			</div>	
+	</header>
+	
+	<main>
+		<div id="container">
+			<div id="board">
+				<div id="sq0" class="square"></div>
+				<div id="sq1" class="square"></div>
+				<div id="sq2" class="square"></div>
+				<div id="sq3" class="square"></div>
+				<div id="sq4" class="square"></div>
+				<div id="sq5" class="square"></div>
+				<div id="sq6" class="square"></div>
+				<div id="sq7" class="square"></div>
+				<div id="sq8" class="square"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div>
+			<button type="button" class="btn btn-dark" id = "start-game" >Start Game!</button>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+<footer><span style="float: right;font-size: medium;">Sahil Kaling&#169;</span></footer>
+</html>

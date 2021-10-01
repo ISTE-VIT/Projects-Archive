@@ -1,0 +1,70 @@
+
+
+body {
+	font-size: 18px;
+	padding: .5em 2em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+#button-play-again {
+	margin: 0 auto;
+}
+
+#container {
+	margin: 2em auto;
+	width: 100%;
+}
+
+#board {
+	display: grid;
+	grid-template-columns: repeat(3, 150px);
+	margin: auto;
+
+	width: 500px
+}
+
+#play-again {
+	margin: 0 auto;
+}
+
+#sq0, #sq1, #sq3, #sq4 {
+	border-width: 0 5px 5px 0;
+}
+
+#sq2, #sq5 {
+	border-width: 0 0 5px 0;
+}
+
+#sq6, #sq7 {
+	border-width: 0 5px 0 0;
+}
+
+#sq8 {
+	border-width: 0;
+}
+
+
+.square {
+	border-color: lightgrey;
+	border-style: solid;
+	display: inline;
+	font-size: 6em;
+	line-height: 120px;
+	padding: 20px 40px;
+	height: 150px;
+	width: 150px;
+}
+
+
+  
+.scoreboard{
+	text-align: center;
+}

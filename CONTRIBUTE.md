@@ -2,8 +2,8 @@
 - Fork this repo 
 - Clone on your local machine 
 ```terminal
-git clone https://github.com/<your username>/hacktoberfest.git
-cd hacktoberfest
+git clone https://github.com/<your username>/Projects-Archive.git
+cd Projects-Archive.git
 ```
 - Create a new branch 
 ```terminal

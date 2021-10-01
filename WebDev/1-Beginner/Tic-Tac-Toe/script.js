@@ -7,7 +7,10 @@ let score2 = document.getElementById("scoreo");
 score1.innerHTML = 0;
 score2.innerHTML = 0;
 let counter = 0;
-
+let showResult=false;
+let resultMessage;
+const resultDiv=document.querySelector(".result-message-div");
+const resultDivP=document.querySelector(".result-message-div > P ");
 function resetScore(){
   score1.innerHTML = 0;
   score2.innerHTML = 0;
@@ -18,6 +21,7 @@ function modifyPlayer(){
 }
 
 function startGame() {
+  hidePopUp();
   start.innerHTML = "Restart Game!";
   counter = 0;
   for (let i = 0; i < squares.length; i++) {
@@ -55,18 +59,27 @@ function draw() {
 
 function checkWinner(){
   if(winnerX() == true ){
-    alert("Congratulations! X Won");
-    startGame()
     score1.innerHTML++;
+    resultMessage="Congratulations! X Won";
+    showResult=true;
+    // alert("Congratulations! X Won");
+    showPopUp();
+    // startGame()
   }
   else if (winnerO() == true){
-    alert("Congatulations! O Won");
-    startGame()
     score2.innerHTML++;
+    resultMessage="Congratulations! O Won";
+    showResult=true;
+    showPopUp();
+    // alert("Congatulations! O Won");
+    // startGame()
   }
   else if(counter == 9){
-    alert("Game Tied. GG!");
-    startGame()
+    resultMessage="Game Tied. GG!";
+    showResult=true;
+    // alert("Game Tied. GG!");
+    showPopUp();
+    // startGame()
   }
 }
 
@@ -113,6 +126,7 @@ function winnerX(){
         return true;
     }
     else {
+      showResult=false;
       return false;
     }
 }
@@ -162,9 +176,19 @@ function winnerO(){
       return true;
   }
   else {
+    showResult=false;
     return false;
   }
   }
 
 }
 
+function showPopUp()
+{
+  resultDiv.style.display="flex";
+  resultDivP.textContent=resultMessage;
+}
+
+function hidePopUp(){
+  resultDiv.style.display="none"
+}

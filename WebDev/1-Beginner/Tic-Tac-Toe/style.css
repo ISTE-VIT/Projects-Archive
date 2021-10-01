@@ -68,3 +68,27 @@ h2 {
 .scoreboard{
 	text-align: center;
 }
+
+.result-message-div{
+  position:absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 60%;
+  height:40%;
+  background-color: rgb(206, 206, 206);
+  border-radius: 45px;
+  top: 50%;
+  transform: translate(0,-50%);
+  display:none;
+  align-items: center;
+}
+
+.result-message-div>p{
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	width:100%;
+}

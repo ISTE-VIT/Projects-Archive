@@ -24,45 +24,43 @@ h2 {
 }
 
 #board {
-	display: grid;
-	grid-template-columns: repeat(3, 150px);
-	margin: auto;
-
-	width: 500px
+    display: grid;
+    width: 350px;
+    height: 350px;
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+    margin:  25px auto;
+    grid-column-gap: 8px;
+    grid-row-gap:8px;
+  
 }
 
 #play-again {
 	margin: 0 auto;
 }
 
-#sq0, #sq1, #sq3, #sq4 {
-	border-width: 0 5px 5px 0;
-}
 
-#sq2, #sq5 {
-	border-width: 0 0 5px 0;
-}
-
-#sq6, #sq7 {
-	border-width: 0 5px 0 0;
-}
-
-#sq8 {
-	border-width: 0;
-}
 
 
 .square {
 	border-color: lightgrey;
 	border-style: solid;
 	display: inline;
-	font-size: 6em;
-	line-height: 120px;
+	font-size: 4em;
+	line-height: 80px;
 	padding: 20px 40px;
-	height: 150px;
-	width: 150px;
+	height: 120px;
+	width: 120px;
 }
 
+.square{
+ background-color: teal;
+    border-radius: 10px;
+    padding: 25px;
+}
+.square:hover{
+	background-color: #00ff00;
+	color: white;
+}
 
   
 .scoreboard{
@@ -91,4 +89,39 @@ h2 {
 	text-align: center;
 	display: block;
 	width:100%;
+}
+table{
+    border-collapse: collapse;
+    border: 20px solid hotpink;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+  
+}
+td{
+    border-top: 3px solid burlywood;
+    
+}
+td:first-child{
+    border-right: 3px solid burlywood;
+}
+th{
+    padding:0px 10px;
+}
+td{
+    padding: 0;
+}
+
+.current{
+	float: left;
+	padding-left: 6%;
+}
+
+.final{
+	padding: 4px;
+}
+
+.btn:hover{
+	background-color: hotpink;
+	color: white;
 }

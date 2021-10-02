@@ -80,7 +80,7 @@ If the information from this repo was useful to you in any way, make sure you gi
 </td>
 
 <td align="center" >
-<a href="https://github.com/ISTE-VIT/Projects-Archive/tree/main/Webdev">Jump to this folder</a>
+<a href="https://github.com/ISTE-VIT/Projects-Archive/tree/main/WebDev">Jump to this folder</a>
 </td>
 
 

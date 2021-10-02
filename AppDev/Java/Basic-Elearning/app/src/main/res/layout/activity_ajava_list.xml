@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ajava_list"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_gravity="fill"
+        android:layout_height="50sp"
+        android:layout_marginTop="13sp"
+        android:layout_marginLeft="10sp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        android:layout_marginRight="10sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="20dp"
+            >
+            <Button
+                android:id="@+id/back"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AJAVA MCQS"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:rowCount="2"
+            android:columnCount="1"
+            android:background="@drawable/gradiant_bg"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chap1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHAPTER 1 \n\n JAVA APPLETS"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/inside_card_bg"
+                    android:textColor="@color/white"
+                   android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                   android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="20sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginStart="15sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:id="@+id/chap2">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHAPTER 2 \n\n ABSTRACT WINDOW TOOLKIT"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/inside_card_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="20sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginStart="15sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:id="@+id/chap3"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHAPTER 3 \n JAVA DATABASE CONNECTIVITY"
+                    android:lineHeight="39dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/inside_card_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="20sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginStart="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:id="@+id/chap4"
+                android:layout_columnWeight="1">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHAPTER 4 \n\n SERVLETS"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/inside_card_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="20sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginStart="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:id="@+id/chap5"
+                android:layout_columnWeight="1">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHAPTER 5 \n\n JAVA SERVER PAGES"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/inside_card_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="27dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginStart="15sp" />
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

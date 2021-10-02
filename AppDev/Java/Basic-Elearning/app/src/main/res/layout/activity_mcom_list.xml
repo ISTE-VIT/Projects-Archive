@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nma_list"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_gravity="fill"
+            android:layout_height="50sp"
+            android:layout_marginTop="13sp"
+            android:layout_marginLeft="10sp"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            android:layout_marginRight="10sp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_baseline_arrow_back_24"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MCOM PAPERS"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:background="@drawable/gradiant_bg"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summer 2018 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summer 2017 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summer 2016 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summer 2015 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summer 2014 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="25sp"
+                    android:background="@drawable/mcom_bg"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:paddingRight="24dp"
+                    android:text="Winter 2018 \n \n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winter 2017 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="24dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winter 2016 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="24dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winter 2015 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="24dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winter 2014 \n \n"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="@drawable/mcom_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="20sp"
+                    android:paddingRight="24dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="35dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

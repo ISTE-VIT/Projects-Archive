@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#11052C</color>
+    <color name="text_color">#F3F1F5</color>
+    <color name="card_bg">#170055</color>
+    <color name="rating">#FFE459</color>
+</resources>

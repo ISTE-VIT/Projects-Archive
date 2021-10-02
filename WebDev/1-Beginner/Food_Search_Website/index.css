@@ -1,17 +1,80 @@
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background: rgb(255, 255, 255);
 }
-.card-group .card .card-body .card-text-price{
+.card-group .card .card-body .card-text-price {
   color: grey;
 }
 .checked {
   color: orange;
 }
-#copyright{
+#copyright {
   padding: 75px 0 0 0;
+}
+
+.card__image {
+  padding: 10px;
+  border-radius: 30px;
+  height: 280px;
+}
+
+.card__group {
+  padding: 0 20px;
+  margin: 20px;
+}
+.btn-custom:hover {
+  background-color: #ff5600;
+  border: 1px #ff5600 solid;
+  transition: linear 0.5s;
+}
+
+.card__ {
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.navLink--custom:hover {
+  color: #ff5600 !important;
+  transition: linear 0.25s;
+}
+/* secondpage */
+.secondPage {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 170px;
+}
+
+.believe {
+  font-size: 87px;
+  line-break: auto;
+  word-break: break-all;
+  margin: 0;
+  font-family: josefin sans, sans-serif;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.icons {
+  width: 60px;
+}
+.icons1 {
+  display: flex;
+  padding: 10px;
+}
+.icons2 {
+  display: flex;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+}
+.section2 {
+  display: flex;
+  justify-content: space-around;
 }

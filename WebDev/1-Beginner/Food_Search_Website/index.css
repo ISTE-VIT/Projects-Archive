@@ -19,23 +19,29 @@ body {
 
 .card__image {
   padding: 10px;
-  border-radius: 30px;
   height: 280px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .card__group {
   padding: 0 20px;
   margin: 20px;
 }
+
+.btn-custom {
+  color: #ff5600;
+}
 .btn-custom:hover {
-  background-color: #ff5600;
+  color: #ffffff;
   border: 1px #ff5600 solid;
-  transition: linear 0.5s;
+  background-color: #ff5600;
+  transition: linear 0.15s;
 }
 
 .card__ {
   margin: 20px;
-  border-radius: 30px;
+  overflow: hidden;
 }
 
 .navLink--custom:hover {

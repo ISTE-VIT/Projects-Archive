@@ -27,7 +27,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">How To Run</a></li>
+        <li><a href="#how-to-run">How To Run</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>

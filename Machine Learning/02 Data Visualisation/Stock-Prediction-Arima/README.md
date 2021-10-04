@@ -87,9 +87,7 @@ This is a list of python libraries required to run this project
 ### How To Run
 
 1. Clone the repo
-    ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
+   
 2. Open the Main_Jupyter_File.ipynb
    
 3. Install all the prerequisites mentioned abvove

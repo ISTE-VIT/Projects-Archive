@@ -20,13 +20,14 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#snapshots">Snapshots</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">How To Run</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -38,8 +39,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Analysing the stock market and reducing the complexity of acquiring knowledge by visualisation of stocks and prediction of stock prices. Also, due to coronavirus, there has been a lot of decrease in the prices of stock. This is something additional that we’ve added in our project.<br><br>
 This project is based on technical analysis, visualization, and prediction by using Time Series Analysis. We are looking at data from the stock market, particularly some giant technology stocks such as APPLE and GOOGLE. We used pandas to get stock information, visualized different aspects of it, and finally looked at a few ways of analysing the risk of a stock, based on its previous performance history. 
 
@@ -54,7 +53,14 @@ This project is based on technical analysis, visualization, and prediction by us
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Snapshots
 
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135846360-eef005aa-5aa0-437d-a0b7-19d720a99f1b.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135846367-cc97d77a-834c-4360-b110-af4e0a6d2f81.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135846373-678f9153-d071-4c0a-8287-4684018ae461.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135846376-bfaf79d5-5d0c-4278-ac44-9bc0b6aafa49.PNG" width="600px"></p>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started

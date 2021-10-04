@@ -40,7 +40,12 @@ https://data.medicare.gov/
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135875598-88efed3e-cae1-4120-9cbc-f6bc72ce1849.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135875605-90901280-48f1-401b-9116-c7e7aa16e147.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135875608-c1182f6d-3927-4453-9bb6-9462d97e7317.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135875612-d8280cad-9955-4ef4-84ce-007604e6f9b1.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135875649-c764fb9c-367f-4ef9-912c-53770b5e6af9.PNG" width="600px"></p>
+
 The following types of graphs and charts have been implemented in this project.<br>
 * Bar chart
 * Line chart

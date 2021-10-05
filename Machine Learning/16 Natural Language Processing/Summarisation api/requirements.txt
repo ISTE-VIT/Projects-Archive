@@ -1,3 +1,0 @@
-Flask==1.1.1
-numpy
-gensim==3.8.3

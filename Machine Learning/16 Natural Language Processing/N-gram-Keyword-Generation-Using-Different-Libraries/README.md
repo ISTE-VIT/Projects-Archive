@@ -43,6 +43,10 @@ An API has also been made with flask to create a easy interface for users<br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Screenshots
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135958559-20611113-2fc2-4b8b-8d80-d4f992162e23.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135958564-ddbb87f7-4dc8-4d78-be1f-096482a29d48.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135958566-f4a38c33-6e9a-49bb-89a5-ff7bf80c044f.PNG" width="600px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/62510908/135958568-dc0e7ff6-49b4-40da-be3f-eb1feaec7394.PNG" width="600px"></p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

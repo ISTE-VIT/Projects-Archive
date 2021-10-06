@@ -1,0 +1,2 @@
+rootProject.name = "Age in days calculator"
+include ':app'

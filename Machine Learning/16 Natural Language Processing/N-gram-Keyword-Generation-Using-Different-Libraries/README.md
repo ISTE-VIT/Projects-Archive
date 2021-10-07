@@ -97,6 +97,6 @@ This is a list of python libraries required to run this project
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more info.
 
 <p align="right">(<a href="#top">back to top</a>)</p>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Age in days calculator</string>
+    <string name="calculate_your">CALCULATE YOUR</string>
+    <string name="todo">TODO</string>
+    <string name="age">- Age in days -</string>
+    <string name="d_o_b">D.O.B</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="your_age_in_days">Your age in days</string>
+</resources>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+.main-container{
+    min-height: 110vh;
+    /* background-color:black; */
+    background-image: linear-gradient(to bottom right, rgb(0, 11, 48),rgb(0, 63, 99));
+    margin-top: -10px; 
+}
+
+.heading-content{
+    border: 5px solid rgb(252, 252, 252);
+    margin-top: 20px;
+    padding: 20px 25px;
+    text-align: center;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+.heading-content h1{
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 2px;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    overflow-y: hidden;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.main-content img{
+    border-radius: 30px;
+    width: 260px;
+    height: 275px;
+}
+
+.button{
+    text-align: center;
+    padding: 10px;
+    margin:15px;
+}
+
+
+#start{
+    background-image: linear-gradient(to right, rgb(0, 22, 94),rgb(0, 35, 49));
+    /* background-image: linear-gradient(to bottom right, rgb(0, 11, 48),rgb(0, 63, 99)); */
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 30px;
+    border-color: rgb(0, 142, 236);
+    outline: none;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+#start:hover{
+    border-color: rgb(2, 62, 173);
+    outline: none;
+}
+
+.game{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    cursor: pointer;
+    box-shadow: 10px 15px 40px rgb(58, 58, 58);
+}
+
+#firstdisplay{
+    text-align: center;
+    margin:50px;
+    word-spacing: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    display: block;
+    color: whitesmoke;
+}
+
+#choicedisplay{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    /* display: block; */
+    font-size: 25.5px;
+    color: whitesmoke;
+}
+
+@media all and (max-width:800px) and (max-height:900px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .main-container{
+        min-height: 110vh;
+        background-image: linear-gradient(to bottom right, rgb(0, 11, 48),rgb(0, 63, 99));
+        margin-top: -10px; 
+    
+    }
+    
+    .heading-content{
+        border: 5px solid rgb(252, 252, 252);
+        margin-top: 15px;
+        padding: 10px 25px;
+        text-align: center;
+        width: 100%;
+        border-radius: 50px;
+    }
+    
+    .heading-content h1{
+        font-family: 'Poppins', sans-serif;
+        word-spacing: 1.5px;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: whitesmoke;
+        overflow-y: hidden;
+    }
+    
+    .main-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        flex-direction: column;
+    }
+    
+    
+    
+    .game{
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 10px 15px 40px rgb(58, 58, 58);
+    }
+    
+    #firstdisplay{
+        text-align: center;
+        margin:50px;
+        word-spacing: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+        display: block;
+        color: whitesmoke;;
+
+    }
+    
+    #choicedisplay{
+        text-align: center;
+        margin: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        /* display: block; */
+        font-size: 22.5px;
+        color: whitesmoke;
+    }
+
+    #rock,#paper,#scissor{
+        height: 230px;
+        width: 230px;
+    }
+
+
+
+}

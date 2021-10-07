@@ -71,6 +71,8 @@ To get a local copy up and running follow these simple steps.
 
 This is a list of python libraries required to run this project
 * yake
+* spacy
+* rake-nltk
 * flask
   ```sh
   pip install LibraryName

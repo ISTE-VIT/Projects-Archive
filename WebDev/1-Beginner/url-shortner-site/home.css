@@ -1,0 +1,613 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+#navbar{
+    width: 100%;
+    height: 7%;
+    background-color: #e0e0e0;
+    z-index: 4;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#leftnav{
+    margin-left: 1%;
+    background-color: inherit;
+    z-index: inherit;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+#rightnav{
+    margin-top: 0.5%;
+    background-color: inherit;
+    z-index: inherit;
+    position: inherit;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+h4{
+    margin-top: 0%;
+    margin-right: 3%;
+    font-family: aladin;
+    font-size: 35px;
+}
+#navbar a{
+    margin-left: 9%;
+    margin-top: 2%;
+    color: #adadad;
+    border: none;
+    text-decoration: none;
+}
+#navbar a:hover{
+    color: #1A2E35;
+
+}
+#navbar a:active{
+    color: #ff4f5a;
+}
+
+#infoDiv{
+    display: grid;
+    grid-template-rows: 100px repeat(3,90px) 120px auto;
+    grid-template-columns:10% repeat(4,20%) 10%;
+}
+#infoDiv h1{
+    grid-row: 2/4;
+    grid-column: 2/4;
+    font-size: 75px;
+    color: #1A2E35;
+}
+#infoDiv p{
+    grid-row: 4/6;
+    grid-column: 2/4;
+    margin-top: 9%;
+    font-size: 25px;
+    color: #adadad;
+}
+#infoDiv img{
+    grid-row: 1/7;
+    grid-column: 4/7;
+}
+#infoDiv button{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    margin-top: 17%;
+    
+    
+}
+#mainImage{
+    width: 750px;
+}
+#inputLink{
+
+    display: grid;
+    grid-template-rows: 50px 50px auto;
+    grid-template-columns: 10% repeat(4,20%) 10%;
+}
+#inputDiv{
+    background-size: 100%;
+    background-color: #284752;
+    z-index: 2;
+    grid-row: 1/3;
+    grid-column: 2/6;
+    align-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#outputDiv{
+    grid-row: 2/4;
+    grid-column: 1/7;
+    z-index: 1;
+    padding-top: 70px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+.outputlink{
+    background-color: #f5f5f5;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 10px;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+h6{
+    align-self: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #1A2E35;
+}
+.output{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #ff4f5a;
+}
+.outputlink button{
+    padding: 3px 13px;
+    margin: 8px 8px;
+}
+
+#inputDiv input{
+    color: #1A2E35;
+    font-size: 30px;
+    align-self: center;
+    width: 700px;
+}
+#scroll{
+    height: 60px;
+    width: 100%;
+    background-color:inherit;
+}
+#inputDiv button{
+    background-color: #a7adc6;
+    font-size: 30px;
+    color: #1A2E35;
+    align-self: center;
+} 
+#inputDiv button:hover{
+    background-color: #ff4f5a;
+} 
+#statistics{
+    display: grid;
+    grid-template-rows:40px 60px 40px repeat(11,40px);
+    grid-template-columns: auto repeat(24,1.5%) auto;
+    grid-column-gap: 30px;
+    background-color: #e0e0e0;
+}
+#statistics h3{
+    grid-column:10/18;
+    grid-row: 2/3;
+    
+    justify-self: center;
+    font-size: 35px;
+}
+#statistics h5{
+    font-size: 25px;
+    align-self: center;
+    margin-top: 30%;
+}
+.boxp{
+    color: #858585;
+    font-size: 20px;
+    margin-top: 20%;
+}
+#mainp{
+    color: #858585;
+    justify-self: center;
+    grid-column: 10/18;
+    grid-row: 3/4;
+    font-size: 20px;
+}
+#bgLine{
+    grid-row: 9/10;
+    grid-column: 3/25;
+    z-index: 0;
+    background-color: #ff4f5a;
+}
+#statsBox1{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    grid-row: 6/12;
+    grid-column: 2/10;  
+    padding: 0.5% 5%;
+    z-index: 1;
+}
+#statsBox2{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    grid-row: 7/13;
+    grid-column: 10/18;
+    padding: 0.5% 5%;
+    z-index: 1;
+}
+#statsBox3{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    grid-row: 8/14;
+    grid-column: 18/26;
+    padding: 0.5% 5%;
+    z-index: 1;
+}
+#circle1{
+    z-index: 2;
+    background-color: #1A2E35;
+    border-radius: 50%;
+    grid-row: 5/7;
+    grid-column: 3/5;
+}
+#circle2{
+    z-index: 2;
+    background-color: #1A2E35;
+    border-radius: 50%;
+    grid-row: 6/8;
+    grid-column: 11/13;
+}
+#circle3{
+    z-index: 2;
+    background-color: #1A2E35;
+    border-radius: 50%;
+    grid-row: 7/9;
+    grid-column: 19/21;
+}
+#boost{
+    background-color: #1a2e35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#boost h3{
+    font-size: 35px;
+    color: #f5f5f5;
+    align-self: center;
+    justify-self: center;
+}
+#boost button{
+    padding: 1% 1%;
+    margin: 3% 40%;
+    background-color: #a7adc6;
+    color: #1a2e35;
+}
+#boost button:hover{
+    background-color: #ff4f5a;
+}
+footer{
+    background-color: #070C0E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer h6{
+    font-size: 18px;
+    color: #f5f5f5;
+}
+footer h4{
+    color: #f5f5f5;
+    margin-top: 3%;
+}
+footer p{
+    color: #858585;
+}
+footer h6:hover{
+    color: #ff4f5a;
+}
+footer p:hover{
+    color: #ff4f5a;
+}
+button{
+    color: #adadad;
+    padding-top: 1% 1%;
+    margin: 1% 3%;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: inherit;
+    
+}
+button:hover{
+    background-color: #ff4f5a;
+    color: #1A2E35;
+}
+i{
+    color: #ff4f5a;
+    font-size: 40px;
+    margin: 30% 20%;
+}
+.flipCard {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+.flipcardInner{
+    background-color: inherit;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flipcard:hover .flipcardInner {
+    transform: rotateY(180deg);
+}
+.flipcardFront{
+    background-color: #f5f5f5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.flipcardBack{
+    background-color: #f5f5f5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+  
+  /* Style the back side */
+.flipcardBack {
+    background-color: #f5f5f5;
+    transform: rotateY(180deg);
+}
+#loader {
+    border: 6px solid #f5f5f5; /* Light grey */
+    border-top: 6px solid #adadad; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s ease-in-out infinite;
+    align-self: center;
+    justify-self: center;
+    display: none;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 6in){
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5%;
+    }
+    #navbar i{
+        font-size: 150%;
+    }
+    h4{
+        font-size: 30px;
+        text-align: center;
+    }
+    button{
+        font-size: 15px;
+        margin: 1% 1%;
+    }
+    #infoDiv{
+        display: grid;
+        grid-template-rows: 400px 120px 40px 40px;
+        grid-template-columns:100%;
+    }
+    #dropdown{
+        z-index: 4;
+        position: fixed;
+        left: 0%;
+        top: 5%;
+        height: 0px;
+        width: 100%;
+        background-color: #adadad;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        
+    }
+    #content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 20px;
+        text-align: center;
+    }
+    #content a{
+        text-decoration: none;
+        color: #1a2e35;
+    }
+    #dropbutton{
+        border: none;
+        background-color: inherit;
+    }
+    #infoDiv h1{
+        grid-row: 2/4;
+        grid-column: 1/2;
+        font-size: 50px;
+        text-align: center;
+        align-self: flex-start;
+    }
+    #infoDiv p{
+        grid-row: 4/5;
+        grid-column: 1/2;
+        margin-top: 0%;
+        font-size: 15px;
+        text-align: center;
+    }
+    #infoDiv img{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: center;
+    }
+    #infoDiv button{
+        font-size: 25px;
+        grid-row: 5/6;
+        grid-column: 1/2;
+        margin-top: 1%;
+        width: 35%;
+        padding: 0% 0%;
+        height: 35px;
+        justify-self: center;
+    }
+    #mainImage{
+        height: 400px;
+        width: auto;
+    }
+    #inputDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+    #inputLink{
+        display: grid;
+        grid-template-rows: 60px 60px auto;
+        grid-template-columns: 10% repeat(4,20%) 10%;
+    }
+    #inputDiv input{
+        width: auto;
+        font-size: 20px;
+        align-self: center;
+        justify-self: center;
+        margin: 0% 0%;
+        padding: 1% 2%;
+    }
+    #scroll{
+        height: 60px;
+        width: 100%;
+        background-color:inherit;
+    }
+    #inputDiv button{
+        margin: 0% 20%;
+        font-size: 20px;
+
+    } 
+    .outputlink{
+        margin-top: 5%;
+        height: 120px;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 50px 50px;
+
+    }
+    .outputlink h6{
+        justify-self: center;
+        font-size: 20px;
+        grid-row: 1/2;
+    }
+    .output{
+        grid-row: 2/3;
+        align-self: center;
+        justify-self: center;
+        margin-top: 5%;
+    }
+    .outputlink .output button{
+        height: 35px;
+        align-self: center;
+    }
+    .input h6{
+        font-size: 15px;
+        justify-self: center;
+    }
+    #statistics{
+        display: grid;
+        grid-template-rows: 40px 90px 30px repeat(3,200px 50px);
+        grid-template-columns: 12% 76% 12%;
+        grid-column-gap: 0px;
+    }
+    #statistics h3{
+        grid-column:1/4;
+        grid-row: 1/2;
+        font-size: 35px;
+        text-align: center;
+    }
+    #statistics h5{
+        font-size: 25px;
+    }
+    .boxp{
+        color: #858585;
+        font-size: 15px;
+        margin-top: 20%;
+    }
+    #mainp{
+        color: #858585;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 15px;
+        margin-top: 15%;
+        text-align: center;
+    }
+    #bgLine{
+        grid-row: 4/9;
+        grid-column: 2/3;
+        border-radius: 20px;
+        z-index: 0;
+        background-color: #ff4f5a;
+        width: 30px;
+        justify-self: center;
+    }
+    #statsBox1{
+        background-color: #f5f5f5;
+        border-radius: 20px;
+        grid-row: 4/5;
+        grid-column: 2/3;
+        padding: 0.5% 5%;
+        z-index: 1;
+    }
+    #statsBox2{
+        background-color: #f5f5f5;
+        border-radius: 20px;
+        grid-row: 6/7;
+        grid-column: 2/3;
+        padding: 0.5% 5%;
+        z-index: 1;
+    }
+    #statsBox3{
+        background-color: #f5f5f5;
+        border-radius: 20px;
+        grid-row: 8/9;
+        grid-column: 2/3;
+        padding: 0.5% 5%;
+        z-index: 1;
+    }
+    #circle1{
+        grid-row: 3/5;
+        grid-column: 2/3;
+        width: 70px;
+        height: 70px;
+        margin-left: 5%;
+
+    }
+    
+    #circle2{
+        grid-row: 5/7;
+        grid-column: 2/3;
+        width: 70px;
+        height: 70px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #circle3{
+        grid-row: 7/9;
+        grid-column: 2/3;
+        width: 70px;
+        height: 70px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    #boost h3{
+        font-size: 25px;
+    }
+
+    footer h4{
+        color: #f5f5f5;
+        margin-top: 8%;
+    }
+
+}

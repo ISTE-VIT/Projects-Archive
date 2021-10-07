@@ -56,6 +56,7 @@ An API has also been made with flask to create a easy interface for users<br>
 * [Flask](https://flask.org/)
 * [HTML](https://html.org/)
 * [CSS](https://css.org/)
+* [Jupyter](https://jupyter.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -97,6 +98,6 @@ This is a list of python libraries required to run this project
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more info.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>

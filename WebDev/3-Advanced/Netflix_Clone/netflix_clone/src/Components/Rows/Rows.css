@@ -15,7 +15,7 @@
 }
 
 .row_poster {
-  max-height: 100px;
+  max-height: 130px;
   object-fit: contain;
   margin-right: 10px;
   width: 100%;
@@ -34,4 +34,17 @@
 .row_poster-large:hover {
   transform: scale(1.09);
   opacity: 1;
+}
+
+.movie__name {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05cm;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row__posters img {
+  width: 230px;
 }

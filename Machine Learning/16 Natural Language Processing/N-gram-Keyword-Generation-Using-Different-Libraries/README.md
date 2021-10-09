@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<h3 align="center">N-gram Keyword generation using Yake </h3>
+<h3 align="center">N-gram Keyword generation using Yake,Scapy,Rake-Nltk </h3>
 
   <p align="left">
  This project aims to help content writers and students to help them find keywords in a given passage.
@@ -56,6 +56,7 @@ An API has also been made with flask to create a easy interface for users<br>
 * [Flask](https://flask.org/)
 * [HTML](https://html.org/)
 * [CSS](https://css.org/)
+* [Jupyter](https://jupyter.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -71,6 +72,8 @@ To get a local copy up and running follow these simple steps.
 
 This is a list of python libraries required to run this project
 * yake
+* spacy
+* rake-nltk
 * flask
   ```sh
   pip install LibraryName

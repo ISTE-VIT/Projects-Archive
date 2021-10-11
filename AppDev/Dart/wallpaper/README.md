@@ -6,10 +6,7 @@ Flutter app for Wallpaper using Pixabay API
 <img src = "screenshots\Screenshot_2020-10-15-17-02-00-441_com.example.wallpaper.jpg" height="500em">
 <img src = "screenshots\Screenshot_2020-10-15-17-02-33-704_com.example.wallpaper.jpg" height="500em">
 
-## APK links
-[Apk for arm64](app-arm64-v8a-release.apk)</br>
-[Apk for armeabi](app-armeabi-v7a-release.apk)</br>
-[Apk for x86_64](app-x86_64-release.apk)
+
 
 # How to use these ﬁles 
 The attached ﬁles do NOT work as a standalone project. 

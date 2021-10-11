@@ -32,8 +32,15 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Analysing the stock market and reducing the complexity of acquiring knowledge by visualisation of stocks and prediction of stock prices. Also, due to coronavirus, there has been a lot of decrease in the prices of stock. This is something additional that we’ve added in our project.<br><br>
-This project is based on technical analysis, visualization, and prediction by using Time Series Analysis. We are looking at data from the stock market, particularly some giant technology stocks such as APPLE and GOOGLE. We used pandas to get stock information, visualized different aspects of it, and finally looked at a few ways of analysing the risk of a stock, based on its previous performance history. 
+In the current days, Miniature writing for a blog has turned into an exceptionally well known specialized instrument among Web clients. Numerous clients share tweets or messages regularly on predominant locales, for instance, Twitter and Facebook. Writers of those messages expound on their life, share assessments on assortment of themes and talk about recent concerns. 
+
+As an ever increasing number of clients post with regards to items and administrations they use, or express their political and strict perspectives, miniature writing for a blog sites become important wellsprings of people‟s assessments and sentiments. Such information can be efﬁciently utilized in examination, business or sociology. 
+
+Sentiment is positive or negative surveys about item or on any subjects. We individuals can recognize tweets by perusing whether it is positive or negative. Yet, on the off chance that there is tremendous information to be perused, it would be dreary and tedious. Along these lines, if this cycle should be possible with the assistance of mechanized program then it would be simpler or more manual interaction could be disposed of. 
+
+Sentiment Analysis is a strategy for making a decision about someone's sentiment or feeling regarding something particular written in a piece of message. It is utilized to perceive and organize the sentiments imparted in compositions. The electronic long range informal communication locales like twitter attracts countless customers that are online for granting their experiences as tweets or remarks. The tweets can be then characterized into positive, negative, or nonpartisan. In the proposed work, logistic regression arrangement is utilized as a classifier and unigram as a component vector. 
+
+Sentiment Analysis of Twitter Information Utilizing Logistic Regression is an online application which accepts tweets as an information and gives sentiment esteem as a yield.
 <p align="center"><img src="https://user-images.githubusercontent.com/62510908/136756675-d700ab4d-c07b-4ca2-b805-06b4067416f3.png" width="400px"></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/62510908/136756680-58fe3d48-b160-46a9-bd94-dd541c8e2135.png" width="400px"></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/62510908/136756682-30cbf06a-ba06-489b-ac89-7296649f3ce4.png" width="400px"></p>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ActivtiyAddEditNote">
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TITLE"
+        android:textSize="24sp"
+        android:inputType="text"
+        android:textStyle="bold"></EditText>
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_title"
+        android:hint="Description"
+        android:inputType="textImeMultiLine"
+        android:textSize="22sp"></EditText>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRIORITY:"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_below="@id/edit_text_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        ></TextView>
+
+
+    <NumberPicker
+        android:id="@+id/number_picker_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"></NumberPicker>
+
+</RelativeLayout>

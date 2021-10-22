@@ -1,2 +1,2 @@
-# To-Do-List
-A simple To-Do list made with html, css and js
+# Task Manager
+A simple Web Application which helps the user to manage his/her day-to-day tasks. Made with html, Css, Js and bootstrap.

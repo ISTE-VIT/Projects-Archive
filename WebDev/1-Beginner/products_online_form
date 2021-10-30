@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title></title>
+</head>
+
+<body style="background-image: url('https://wallpaperaccess.com/full/2489626.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <form name='myownform' method='post' style='text-align:center; margin:80px'>
+        <fieldset style='width:680px; height:900px; margin:auto; border-color: lime; border-width: 10px;'>
+            <legend style='text-align:center'>
+                <h1>Product Details Form</h1>
+            </legend>
+            <br>
+            <h3>Product ID:</h3>
+            <input type='text' name='firsthalf' id='firsthalf' maxlength="3" s ize="3" required pattern="[A-Z][A-Z][A-Z]">
+            <input type='text' name='secondhalf' id='secondhalf' maxlength="6" size="6" required pattern="\d\d\d\d\d\d"><br>
+            <h3>Product Name:</h3>
+            <input type='text' name='name' id='name' required onchange="validateName()"><br>
+            <h3>Quantity:</h3>
+            <select name="quantity" id="quantity" oninput="Total()">
+ <option value=" " disabled selected>Choose quantity</option>
+ <option value="1 ">1</option>
+ <option value="2 ">2</option>
+ <option value="3 ">3</option>
+ <option value="4 ">4</option>
+ <option value="5 ">5</option>
+ <option value="6 ">6</option>
+ <option value="7 ">7</option>
+ <option value="8 ">8</option>
+ <option value="9 ">9</option>
+ <option value="10 ">10</option>
+ </select><br>
+            <h3>Price:</h3>
+            <input type='number' name='price' id='price' onfocus='focusevent()' oninput="Total()" onchange='ValidatePrice()' required><br>
+            <br>
+            <h3>Date Of Purchase:</h3>
+            <input type='date' name='DOP'>
+            <br>
+            <h3> Mobile:</h3>
+            <input type='text' name='mobile' id='txtPhoneNo' onchange="ValidateNo()" required><br>
+            <h3> Email:</h3>
+            <input type='text' name='email' id='email' required onchange="ValidateEmail(email)"><br><br>
+            <h2 style="color:lime;">Total Price in Rs.:<br> <span id="tot_amount">0</span></h> <br><br>
+                <input type='submit' name='' style="background-color: lime;" onsubmit="buttonnow()" id="but"><br><br>
+
+        </fieldset>
+    </form><br><br>
+    <script>
+        function ValidateNo() {
+            var phoneNo = document.getElementById('txtPhoneNo');
+            if (phoneNo.value.length < 10 || phoneNo.value.length > 10) {
+                alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+                return false;
+            }
+            return true;
+        }
+
+        function validateName() {
+            var name = document.getElementById('name');
+            if (name.value.length > 50) {
+                alert("Maximum length accepted is only 50");
+            }
+        }
+
+        function ValidatePrice() {
+            var price = document.getElementById('price').value;
+            var prize = parseInt(price);
+            if (prize < 100 || prize > 9999) {
+                alert("Enter price in range 100-9999");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function focusevent() {
+            document.getElementById("price").style.background = "yellow";
+        }
+
+        function Total() {
+            var quantity = document.forms['myownform']['quantity'].value;
+            var prize = parseInt(document.getElementById('price').value);
+            var total = quantity * prize;
+            document.getElementById("tot_amount").innerHTML = total;
+        }
+
+        function ValidateEmail(email) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myownform.email.value)) {
+                return (true)
+            }
+            alert("You have entered an invalid email address!")
+            return (false)
+
+        }
+
+        function buttonnow() {
+            myform.but.value = "done";
+            alert("succesfully done!");
+        }
+        $(document).ready(function() {
+            $("h5").click(function() {
+                alert("Purchased confirmed! Thank You!");
+            });
+        });
+    </script>
+</body>
+
+</html>

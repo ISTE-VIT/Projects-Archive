@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <script language="javascript">
+        var XMLHttpRequestObj = false;
+        if (window.XMLHttpRequest) {
+            XMLHttpRequestObj = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            XMLHttpRequestObj = new
+            ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        function getData(dataSource, divID) {
+            if (XMLHttpRequestObj) {
+                var obj = document.getElementById(divID);
+                XMLHttpRequestObj.open("GET", dataSource);
+                XMLHttpRequestObj.onreadystatechange = function() {
+                    if (XMLHttpRequestObj.readyState == 4 && XMLHttpRequestObj
+                        .status == 200) {
+                        obj.innerHTML =
+                            XMLHttpRequestObj.responseText;
+                    }
+                }
+                XMLHttpRequestObj.send(null);
+            }
+        }
+
+        function myFunction(event) {
+            var x = event.target;
+            document.getElementById("demo").innerHTML = "Triggered by a " + x.
+            tagName + " element" + "this is product description of a blue colored jeans which is very fancy and trendy nowadays.at only Rs.1000 ";
+        }
+
+        function myFunctions(event) {
+            var y = event.target;
+            document.getElementById("demo").innerHTML = "This is triggered by a " + y.
+            tagName + " element" + "The word most commonly refers to denim blue jeans. Jeans can be other colors, but they 're most commonly blue. The defining feature of most jeans is that they 're made out of some kind of denim or denimlike fabric. Most jeans have seams and pockets that are reinforced with rivets—small metal fasteners ";
+        }
+
+
+        function myFunctionz(event) {
+            var z = event.target;
+            document.getElementById("demo").innerHTML = "Here are some adjectives for pants: brisk minor, baggy maroon, fast thick, absurdly baggy, flowered short, loose plush, baggy, green, shiny tapered, male hot, frigid soggy, loose disheveled, casual and well - cut, sloppy khaki, ubiquitous short, wet, bloodsoaked, baggy lightweight, tight russet, baggy homey and uniform.";
+        }
+
+        function myFunctione(event) {
+            try {
+                throw new Error(42, event);
+            } catch (e) {
+                alert("Error number: " + "42" + "Description: " + "not found!")
+            }
+        }
+    </script>
+</head>
+
+<body style="background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-cartoon-clothes-pants-laundry-liquid-laundry-detergent-posteradvertising-background-image_122694.jpg'); background-repeat: norepeat; background-size: cover;">
+    <h1>Application using AJAX</h1>
+    <img src="https://5.imimg.com/data5/GC/XE/MY-65344514/mens-denim-blue-jeans-500x500.jpg" width="300" onclick="myFunction(event)">
+    <!-- onmouseover="getData('jeans_1.txt', 'targetDiv')" -->
+    <img src="https://4.imimg.com/data4/EL/UE/MY-25026605/black-ladies-jegging-500x500.jpg" width="300" onclick="myFunctions(event)">
+    <!-- onmouseover="getData('jeans_2.txt', 'targetDiv')" -->
+    <img src="https://assets.abfrlcdn.com/img/app/product/4/457063-3133979-large.jpg" width="300" onclick="myFunctionz(event)">
+    <!-- onmouseover="getData('jeans_3.txt', 'targetDiv')" -->
+    <img src="https://assets.ajio.com/medias/sys_master/root/20201014/DTnO/5f85fa17aeb269d563da131b/-1117Wx1400H-460188393-brtgreenMODEL.jpg" width="300" onclick="myFunctione(event)">
+    <div id="targetDiv">
+        <h1>Welcome to my Clothing Showroom!</h1>
+        <p id="demo"></p>
+    </div>
+</body>
+
+</html>

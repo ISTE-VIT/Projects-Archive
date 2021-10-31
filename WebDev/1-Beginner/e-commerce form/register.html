@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-color: green;
+        }
+        
+        .container {
+            padding: 50px;
+            background-color: lightcoral;
+        }
+        
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        div {
+            padding: 10px 0;
+        }
+        
+        .resetbtn {
+            background-color: green;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .regbtn {
+            background-color: green;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <center>
+                <h1> E-Commerce Registeration </h1>
+            </center>
+            <hr>
+            <label> Name </label>
+            <input type="text" name="name" placeholder="Name" />
+            <div>
+                <label>
+Your speciality in :
+</label>
+                <select>
+<option value="Footwear">Footwear</option>
+<option value="Accessories">Accessories</option>
+<option value="Clothing">Clothing</option>
+<option value="Garments">Garments</option>
+<option value="Grocery">Grocery</option>
+</select>
+            </div>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob">
+            <div>
+                <label>
+Gender :
+</label><br>
+                <input type="radio" value="Male" name="gender" checked> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+            </div>
+            <label>
+Address :
+</label>
+            <textarea cols="80" rows="5" placeholder="Current Address" value="
+address">
+</textarea>
+            <label for="site"><b>URL for your site:</b></label>
+            <input type="url" id="site" name="site">
+            <br><br>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email">
+            <label for="experience"><b>No. of years of experience</b></label>
+            <input type="number" name="Experience">
+            <br><br>
+            <label for="purpose"><b>Purpose</b></label><br>
+            <input type="checkbox" id="rnd" name="rnd" value="RnD">
+            <label for="rnd"> R&D</label><br>
+            <input type="checkbox" id="learn" name="learn" value="RnD">
+            <label for="learn"> Learning purposes</label><br>
+            <input type="checkbox" id="teach" name="teach" value="Teach">
+            <label for="teach"> Teaching purposes</label>
+            <br><br>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username">
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw">
+            <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Confirm Password" name="pswrepeat">
+            <button type="reset" class="resetbtn">Reset</button>
+            <!-- <span> <input type="image" src="https://icons-forfree.com/iconfiles/png/512/arrow+head+plane+send+icon1320186864038002050.png" alt="Submit" width="60" height="60"></span> -->
+            <span> <button type="submit" class="regbtn">Register</button></span>
+    </form>
+</body>
+
+</html>

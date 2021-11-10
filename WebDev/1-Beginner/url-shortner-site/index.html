@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css" media="screen"/>
+  <script src="home.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+  <title>goodShort</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  });
+</script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<nav id="navbar">
+  <div id="leftnav">
+    <h4>goodShort</h4> <a href="#infoDiv">Home</a> <a href="#scroll">Links</a> <a href="#statistics">Statistics</a>
+   </div> 
+   <div id="rightnav">
+     <button id="login">Login</button><button id="signup">Signup</button>
+   </div>
+</nav>
+<div id="dropdown"></div>
+<body>
+  <div id="infoDiv">
+    <h1>More than just shorter links</h1>
+
+    <p>Build your brand’s recognition and get detailed insights 
+    on how your links are performing.</p>
+
+
+    <button id="getStarted" onclick="getStarted()" onmouseover="thumbsup()" onmouseout="thumbsdown()">Get Started</button>
+    <img src="main.jpg" id="mainImage">
+  </div>
+  <div id="scroll"></div>
+  <div id="inputLink">
+    <div id="inputDiv">
+      <input type="search" id="userlink" placeholder="shorten a link here">
+      <button id="shorten" onclick="shorten()"> Shorten It!</button>
+    </div>
+    <div id="outputDiv">
+      <div id="loader"></div>
+    </div>
+  </div>
+  
+
+ 
+  <div id="statistics">
+    <h3>Advanced Statistics</h3>
+    <p id="mainp"> Track how your links are performing across the web with our 
+      advanced statistics dashboard.</p>
+    <div id="circle1"><i class="far fa-id-card"></i></div>
+    <div id="circle2"><i class="fas fa-chart-bar"></i></div>
+    <div id="circle3"><i class="far fa-edit"></i></div>
+    <div id="bgLine"></div>
+    <div id="statsBox1" class="flipcard">
+      <div class="flipcardInner">
+        <div class="flipcardFront">
+          <h5>Brand Recognition</h5>
+        </div>
+        <div class="flipcardBack">
+          <p class="boxp">Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+      </div>
+    </div>
+    <div id="statsBox2" class="flipcard">
+      <div class="flipcardInner">
+        <div class="flipcardFront">
+          <h5>Detailed Records</h5>
+        </div>
+        <div class="flipcardBack">
+          <p class="boxp">Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.</p>
+        </div>
+      </div>
+    </div>
+    <div id="statsBox3" class="flipcard">
+      <div class="flipcardInner">
+        <div class="flipcardFront">
+          <h5>Fully Customizable</h5>
+        </div>
+        <div class="flipcardBack">
+          <p class="boxp">Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="boost">
+    <h3>Boost your links today</h3>
+    <button id="boostbutton">Get Started</button>
+  </div>
+  <footer>
+    <h4>goodShort</h4>
+    <div id="features">
+      <h6>Features</h6>
+      <p>Link Shortening</p>
+      <p>Branded Links</p>
+      <p>Analytics</p>
+
+    </div>
+    <div id="resources">
+      <h6>Resources</h6>
+      <p>Blog</p>
+      <p>Developers</p>
+      <p>Support</p>
+    </div>
+    <div id="company">
+      <h6>Company</h6>
+      <p>About</p>
+      <p>Our Team</p>
+      <p>Careers</p>
+      <p>Contact</p>
+    </div>
+  </footer>
+</body>
+</html>

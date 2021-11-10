@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="static\style.css">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Keyword Generator(With n-gram keywords)</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/search" method="POST">
+    	<input type="text" name="experience" placeholder="Enter the text" required="required"  />
+      <input type="number" name="ngram" placeholder="Enter the N-gram size" required="required"  />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Extract</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

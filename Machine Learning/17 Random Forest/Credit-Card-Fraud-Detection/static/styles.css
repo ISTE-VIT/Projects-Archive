@@ -1,0 +1,42 @@
+body{
+	font-size: 16px;
+	font-family: Open Sans, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	line-height: 1.6;
+	padding: 20px;
+	border: 4px solid limegreen;
+	margin: 2% 10%;
+	background: lightyellow;
+}
+
+header{
+	font-size: 1.6em;
+}
+
+header h1{
+	font-size: 1.8em;
+}
+
+.btn-info{
+	border: 1.5px solid black;
+	padding: 10px 15px;
+	margin: 15px;
+	box-shadow: 0 0 4px #eee;
+	cursor: pointer;
+}
+
+.btn-info:hover{
+	background-color: transparent;
+	box-shadow: 0 0 10px #eee;
+}
+
+.ml-container{
+	font-size: 1.4em;
+}
+
+.ml-container textarea{
+	width: 100%;
+}
